@@ -1,0 +1,27 @@
+.table {
+    border: none;
+    border-collapse: collapse;
+    border: 1px solid #132347;
+    border-radius: 5px;
+}
+
+th,
+td {
+    padding: 1.2rem 1rem !important;
+    font-style: 1rem;
+}
+
+thead {
+    background: #7865ff;
+    color: #fff;
+}
+
+td {
+    font-style: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+tr:nth-chils(even) {
+    background: #102048;
+}
