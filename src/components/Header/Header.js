@@ -20,8 +20,8 @@ const Header = () => {
             url: '#service'
         },
         {
-            display: 'Portfolio',
-            url: '#portfolio'
+            display: 'Experience',
+            url: '#experience'
         },
         {
             display: 'Contact',

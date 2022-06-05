@@ -14,14 +14,19 @@ const serviceData = [
     },
 
     {
+        icon: 'ri-gallery-line',
+        title: 'UI / UX',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et consequuntur accusantium sit quos tempora eveniet mollitia dolore!'
+    },
+    {
         icon: 'ri-code-s-slash-line',
         title: 'Web Development',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et consequuntur accusantium sit quos tempora eveniet mollitia dolore!'
-    }
+    },
 ]
 
 const Services = () => {
-    return <section id='services'>
+    return <section id='service'>
         <Container>
             <Row>
                 <Col lg='12' className='services_top mb-5'>
@@ -30,7 +35,7 @@ const Services = () => {
                 </Col>
                 {
                     serviceData.map((item, index) => (
-                        <Col lg='6' md='6' sm='6' key={index} className='mb-4'>
+                        <Col lg='4' md='6' sm='6' key={index} className='mb-4'>
                             <div className="single_service">
                                 <span className="service_icon">
                                     <i class={item.icon}></i>
