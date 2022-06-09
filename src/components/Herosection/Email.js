@@ -29,19 +29,19 @@ const Email = () => {
 
             <form className='w-100' ref={form} onSubmit={sendEmail}>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
                     <input type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <label for="exampleFormControlInput1" class="form-label text-white">Email</label>
                     <input type="email" name="user_email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                    <label for="exampleFormControlInput1" class="form-label text-white">Subject</label>
                     <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Subject" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">message</label>
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">message</label>
                     {/* <textarea name="message" /> */}
                     <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>

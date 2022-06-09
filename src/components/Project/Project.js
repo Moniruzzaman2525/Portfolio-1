@@ -58,7 +58,6 @@ const Project = () => {
                 }
 
 
-
             </Row>
         </Container>
     </section>

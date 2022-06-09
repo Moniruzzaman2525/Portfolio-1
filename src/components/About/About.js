@@ -27,9 +27,9 @@ const About = () => {
                 <Col lg='8' md="9">
                     {
                         aboutFilter === 'ABOUT' && <div className="about_content_wrapper d-flex gap-5">
-                            <div className="about_img w-100 ">
+                            {/* <div className="about_img w-100 ">
                                 <img src={imgAbout} alt="" className='w-100' />
-                            </div>
+                            </div> */}
                             <div className="about_content">
                                 <h2>I'm Md Moniruzzaman</h2>
                                 <p> I am a learner of Web Development and Programming.To further my web development career by demonstrating my abilities and demonstrating that I am a quick learner and knowledgeable professional. I'm always on the lookout for new challenges that will allow me to put my skills to the test, and I love working with cutting-edge technology.</p>
