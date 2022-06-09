@@ -32,7 +32,7 @@ const HeroSection = () => {
                         <p className='mb-3'>Welcome to my world!</p>
                         <h2 className='hero_title '>I'm Md Moniruzzaman</h2>
                         <h4 className='mb-4 mt-2'>I am a web developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, delectus.</p>
+                        <p>To advance my web development career by exhibiting my talents and proving that I am a quick learner and highly skilled professional. I'm always looking for new challenges that will allow me to use my abilities to their full potential, and I enjoy working with cutting-edge technology.</p>
                         <div className="hero_btns mt-4 d-flex align-items-center gap-4">
                             <button className='btn hire_btn'><a href="mailto:moniurzzaman25@gmail.com">Hire Me</a></button>
                             <a href={link} target="_blank" rel="noopener noreferrer">

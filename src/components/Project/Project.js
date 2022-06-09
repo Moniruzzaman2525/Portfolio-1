@@ -39,7 +39,7 @@ const Project = () => {
 
                 {
                     projectData.map((item, index) => (
-                        <Col lg="4" md="6" sm="6" key={index}>
+                        <Col lg="4" md="6" sm="6" className='' key={index}>
                             <div className="project_card mb-5">
                                 <div className="project__img">
                                     <img src={item.imgUrl} alt="" className='w-100' />
@@ -48,7 +48,7 @@ const Project = () => {
                                 <div className="project_content">
                                     <div className="content_top">
                                         <h5>{item.title}</h5>
-                                        <a href={item.url}>View Live</a>
+                                        <a href={item.url} className="ms-5">View Live</a>
                                     </div>
 
 

@@ -32,12 +32,7 @@ const About = () => {
                             </div>
                             <div className="about_content">
                                 <h2>I'm Md Moniruzzaman</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
-                                    elit. Beatae, veniam quod molestiae consectetur
-                                    magnam quasi perferendis aut cumque ex minus
-                                    dolores officia assumenda, fugiat dolorem
-                                    reiciendis laudantium? Consequuntur, deserunt
-                                    odit?</p>
+                                <p> I am a learner of Web Development and Programming.To further my web development career by demonstrating my abilities and demonstrating that I am a quick learner and knowledgeable professional. I'm always on the lookout for new challenges that will allow me to put my skills to the test, and I love working with cutting-edge technology.</p>
                                 <div className="social_links">
                                     <h6 className='mb-4'>Connect With me:</h6>
                                     <span><a href=""><i class="ri-facebook-line"></i></a></span>
