@@ -20,8 +20,8 @@ const Header = () => {
             url: '#service'
         },
         {
-            display: 'Experience',
-            url: '#experience'
+            display: 'Project',
+            url: '#project'
         },
         {
             display: 'Contact',
@@ -29,33 +29,7 @@ const Header = () => {
         },
     ]
 
-    // const headerRef = useRef(null)
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', () => {
-    //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    //             headerRef.current.classList.add('header_shrink')
-    //         } else {
-    //             headerRef.current.classList.remove('header_shrink')
-    //         }
-    //     })
-
-    //     // return () => {
-    //     //     window.removeEventListener('scroll')
-    //     // }
-    // }, [])
-
-    // const handleClick = e => {
-    //     e.preventDefault();
-    //     const targetAttr = e.target.getAttribute('href')
-    //     const location = document.querySelector(targetAttr).offSetTop
-
-    //     window.scrollTo({
-    //         left: 0,
-    //         top: location - 70,
-
-    //     })
-    // }
 
     return <header className='header'>
         <Container>
@@ -69,7 +43,6 @@ const Header = () => {
                                 <a href={item.url}  >{item.display}</a>
                             </li>)
                         }
-
                     </ul>
                 </div>
                 <div className="nav_right d-flex align-items-center gap-4">

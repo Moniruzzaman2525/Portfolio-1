@@ -7,8 +7,8 @@ import './Skill.css';
 const frontendSkills = [
     {
         title: 'HTML',
-        width: '85%',
-        percentage: '85%'
+        width: '10%',
+        percentage: '10%'
     },
     {
         title: 'CSS',

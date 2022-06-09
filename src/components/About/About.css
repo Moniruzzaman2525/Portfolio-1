@@ -41,10 +41,10 @@
 }
 
 .about_img {
-    margin-top: 10px;
+    margin-top: -15px;
     background: #7865FF;
     border-radius: 10px;
-    height: 190px;
+    height: 155px;
 }
 
 .social_links span a i {

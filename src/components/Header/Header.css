@@ -55,3 +55,30 @@
     background: #132347;
     box-sizing: 2px 2px 4px 2px #7865FF;
 }
+
+/* ======Responsive========== */
+
+@media only screen and (max-width: 992px) {
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #7765FF69;
+        z-index: 888888;
+    }
+
+    .nav_menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #132347;
+        z-index: 999999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

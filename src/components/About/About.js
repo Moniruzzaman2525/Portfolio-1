@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './About.css';
-import imgAbout from '../../image/profile-removebg-preview.png'
+import imgAbout from '../../image/profile001.png'
 import Education from './Education';
 import Skill from './Skill';
 import Award from './Award';
@@ -27,7 +27,7 @@ const About = () => {
                 <Col lg='8' md="9">
                     {
                         aboutFilter === 'ABOUT' && <div className="about_content_wrapper d-flex gap-5">
-                            <div className="about_img w-75 ">
+                            <div className="about_img w-100 ">
                                 <img src={imgAbout} alt="" className='w-100' />
                             </div>
                             <div className="about_content">

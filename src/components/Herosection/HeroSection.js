@@ -1,10 +1,12 @@
 
 
 import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import './HeroSection.css';
 import { init } from 'ityped';
-import heroImg from '../../image/profile-removebg-preview.png'
+import heroImg from '../../image/profile001.png';
+
+
 
 const HeroSection = () => {
     const textRef = useRef();
@@ -17,24 +19,31 @@ const HeroSection = () => {
                 'a Web Developer'
             ],
         })
-    }, [])
+    }, []);
+
+    const link = "https://drive.google.com/file/d/1jJRbdG4KY9BzK2NCuHD_Y_JmhR2kOLsw/view?usp=sharing"
+
+
     return <section className='hero_section' id='home'>
         <Container>
             <Row>
                 <Col lg='6' md='6'>
-                    <div className="hero_content">
+                    <div className="hero_content mb-5">
                         <p className='mb-3'>Welcome to my world!</p>
-                        <h2 className='hero_title mb-5'>I'm <span ref={textRef}></span></h2>
+                        <h2 className='hero_title '>I'm Md Moniruzzaman</h2>
+                        <h4 className='mb-4 mt-2'>I am a web developer</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, delectus.</p>
                         <div className="hero_btns mt-4 d-flex align-items-center gap-4">
-                            <button className='btn hire_btn'><a href="">Hire Me</a></button>
-                            <button className="btn">Contact</button>
+                            <button className='btn hire_btn'><a href="mailto:moniurzzaman25@gmail.com">Hire Me</a></button>
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                <button className='btn hover:translate-x-3 hover:bg-emerald-800'>Resume</button>
+                            </a>
                         </div>
                     </div>
                 </Col>
                 <Col lg='6' md='6'>
-                    <div className="hero_img">
-                        <img src={heroImg} alt="" className='w-100 mx-auto' />
+                    <div className="hero_img mx-auto">
+                        <img src={heroImg} alt="" className='w-100' />
                     </div>
                 </Col>
             </Row>
