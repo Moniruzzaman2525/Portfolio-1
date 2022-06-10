@@ -41,6 +41,11 @@
     cursor: pointer;
 }
 
+
+.project-btn {
+    /* margin-top: -20px; */
+}
+
 .project_content h5 {
     color: #fff;
     font-size: 1.5rem;
