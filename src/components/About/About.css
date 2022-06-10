@@ -57,3 +57,23 @@
 .social_links span a {
     margin-right: 15px;
 }
+
+
+@media only screen and (max-width: 992px) {
+    .about_btn {
+        padding: 10px 25px;
+        font-size: .8rem;
+    }
+
+    .about_content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about_btn {
+        margin-bottom: 40px;
+    }
+
+    .about_content p {
+        font-size: .8rem;
+    }
+}

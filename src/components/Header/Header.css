@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100000;
 }
 
 .logo h5 {
@@ -35,6 +35,7 @@
     background-color: #7865FF;
     color: #fff;
     border: none;
+    outline: none;
     border-radius: 5px;
     font-size: .9rem;
     padding: 7px 25px;
@@ -45,6 +46,10 @@
     background: #0E1B31;
 }
 
+.mobile_menu {
+    display: none;
+}
+
 .mobile_menu i {
     color: #fff;
     font-size: 1.3rem;
@@ -53,7 +58,7 @@
 
 .header_shrink {
     background: #132347;
-    box-sizing: 2px 2px 4px 2px #7865FF;
+    box-sizing: 2px 2px 4px -2px #7865FF;
 }
 
 /* ======Responsive========== */
@@ -67,9 +72,10 @@
         height: 100%;
         background: #7765FF69;
         z-index: 888888;
+        display: none;
     }
 
-    .nav_menu {
+    .nav_list {
         position: absolute;
         top: 0;
         right: 0;
@@ -80,5 +86,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 50px;
     }
+
+    .menu_active {
+        display: block;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .header {
+        height: 50px;
+        line-height: 50px;
+    }
+
 }

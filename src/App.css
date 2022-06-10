@@ -82,3 +82,9 @@ footer {
   border-radius: 2em;
   background: #282F4e;
 }
+
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 40px 0px;
+  }
+}

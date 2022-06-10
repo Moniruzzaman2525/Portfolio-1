@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import { Container } from 'reactstrap';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
+
 
 
 
@@ -28,15 +29,33 @@ const Header = () => {
             url: '#contact'
         },
     ]
+    const headerRef = useRef(null);
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerRef.current.classList.add('header_shrink')
+            }
+            else {
+                headerRef.current.classList.remove('header_shrink')
+            }
+        })
+        // return () => {
+        //     window.removeEventListener('scroll')
+        // }
+    }, [])
 
 
+    const menuRef = useRef(null);
 
-    return <header className='header'>
+    const menuToggle = () => menuRef.current.classList.toggle('menu_active')
+
+    const link = "https://drive.google.com/file/d/1jJRbdG4KY9BzK2NCuHD_Y_JmhR2kOLsw/view?usp=sharing"
+
+    return <header className='header' ref={headerRef}>
         <Container>
             <div className="navigation d-flex align-items-center justify-content-between">
                 <div className="logo"><h5>Moniruzzaman</h5></div>
-                <div className="nav_menu">
-
+                <div className="nav_menu" ref={menuRef} onClick={menuToggle}>
                     <ul className="nav_list">
                         {
                             navLinks.map((item, index) => <li className="nav_item" key={index}>
@@ -46,12 +65,15 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="nav_right d-flex align-items-center gap-4">
-                    <button className='btn'>Let's Talk</button>
-                    <span className="mobile_menu"><i class="ri-menu-5-line"></i></span>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        <button className='btn hover:translate-x-3 hover:bg-emerald-800'>Download Resume</button>
+                    </a>
+                    <span className="mobile_menu"><i class="ri-menu-5-line" onClick={menuToggle}></i></span>
                 </div>
 
             </div>
         </Container>
+
     </header>
 };
 

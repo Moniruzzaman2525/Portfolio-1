@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Experience from '../Experience/Experience';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Email from '../Herosection/Email';
 import HeroSection from '../Herosection/HeroSection';
@@ -16,7 +18,9 @@ const Layout = () => {
         {/* <Experience></Experience> */}
 
         <Project />
-        <Email></Email>
+        {/* <Email></Email> */}
+        <Contact></Contact>
+        <Footer></Footer>
     </Fragment>
 };
 
