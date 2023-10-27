@@ -8,6 +8,7 @@ import Email from '../Herosection/Email';
 import HeroSection from '../Herosection/HeroSection';
 import Project from '../Project/Project';
 import Services from '../Services/Services';
+import Blog from '../Blog/Blog';
 
 const Layout = () => {
     return <Fragment>
@@ -19,7 +20,9 @@ const Layout = () => {
 
         <Project />
         {/* <Email></Email> */}
+        <Blog />
         <Contact></Contact>
+
         <Footer></Footer>
     </Fragment>
 };

@@ -5,32 +5,32 @@ import React from 'react';
 import './Skill.css';
 
 const frontendSkills = [
-    {
-        title: 'HTML',
-        width: '10%',
-        percentage: '10%'
-    },
-    {
-        title: 'CSS',
-        width: '85%',
-        percentage: '85%'
-    },
+    
     {
         title: 'JavaScript',
-        width: '85%',
-        percentage: '85%'
+        width: '95%',
+        percentage: '95%'
     },
     {
         title: 'React.Js',
+        width: '95%',
+        percentage: '95%'
+    },{
+        title: 'Next.js',
         width: '90%',
         percentage: '90%'
+    },
+    {
+        title: 'Redux',
+        width: '85%',
+        percentage: '85%'
     },
 ]
 const backendSkills = [
     {
         title: 'Node.js',
-        width: '85%',
-        percentage: '85%'
+        width: '90%',
+        percentage: '90%'
     },
     {
         title: 'Express.js',
@@ -38,14 +38,14 @@ const backendSkills = [
         percentage: '85%'
     },
     {
-        title: 'MongoDB',
-        width: '85%',
-        percentage: '85%'
+        title: 'Mongoose',
+        width: '90%',
+        percentage: '90%'
     },
     {
-        title: 'Stripe.Js',
-        width: '85%',
-        percentage: '85%'
+        title: 'Mongodb',
+        width: '90%',
+        percentage: '90%'
     },
 ]
 

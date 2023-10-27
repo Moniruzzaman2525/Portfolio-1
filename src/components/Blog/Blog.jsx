@@ -2,10 +2,10 @@
 
 
 import React from 'react';
-import './Project.css';
-import img01 from '../../image/next_1.jpg';
-import img02 from '../../image/WhatsApp Image 2023-10-27 at 11.53.49_10ac4636.jpg';
-import img03 from '../../image/img1.png';
+import '../Project/Project.css';
+import img01 from '../../image/1.png';
+import img02 from '../../image/2.png';
+import img03 from '../../image/3.png';
 import { Container, Row, Col } from 'reactstrap';
 // import { useNavigate } from 'react-router-dom';
 
@@ -13,32 +13,36 @@ const projectData = [
     {
         "id": 1,
         imgUrl: img01,
-        title: 'Gadget Galaxy',
+        title: 'UI/UX Design',
+        blog: "User interface design or user interface engineering",
         url: 'https://gadget-galaxy-frontend-moniruzzaman2525.vercel.app/'
     },
     {
         "id": 2,
         imgUrl: img02,
-        title: "Book Catalog",
+        title: "Web Design",
+        blog: "Web design encompasses many different skills",
         url: 'https://vocal-paprenjak-ba58ed.netlify.app/'
     },
     {
         "id": 3,
         imgUrl: img03,
-        title: 'Lukas',
+        title: 'Web Development',
+        blog: "Jim Morisson Says when the musics over turn off the light",
         url: 'item2'
     },
 ]
 
 
 
-const Project = () => {
+const Blog = () => {
     return <section id='project'>
         <Container>
             <Row>
                 <Col lg='12' className='project_top mb-5'>
-                    <h6>Explore my work and give a feedback</h6>
-                    <h2>Project</h2>
+                    <h2>From My Blog
+                        <h4>Our Recent Updates, Blog, Tips, Tricks & More</h4>
+                    </h2>
                 </Col>
 
 
@@ -46,7 +50,7 @@ const Project = () => {
                     projectData.map((item, index) => (
                         <Col lg="4" md="6" sm="6" className='mb-5' key={index}>
                             <div>
-                                <div onClick={()=> window.open(item.url)}>
+                                <div>
                                     <div className="project_card mb-5">
                                         <div className="project__img">
                                             <img src={item.imgUrl} alt="" className='w-100' />
@@ -59,9 +63,12 @@ const Project = () => {
                                     </div>
                                 </div>
 
-                                <button onClick={()=> window.open(item.url)} className="btn" type='submit' >
-                                    Project
-                                </button>
+                                <div>
+                                    <h3>
+                                        {item.title}
+                                    </h3>
+                                    <h5>{item.blog}</h5>
+                                </div>
 
                             </div>
 
@@ -73,4 +80,4 @@ const Project = () => {
     </section>
 };
 
-export default Project;
+export default Blog;

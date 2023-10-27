@@ -21,7 +21,7 @@ const About = () => {
                         <button className={`about_btns ${aboutFilter === 'ABOUT' ? 'about_btns-active' : ''}`} onClick={() => setAboutFilter('ABOUT')}>About me</button>
                         <button className={`about_btns ${aboutFilter === 'EDUCATION' ? 'about_btns-active' : ''}`} onClick={() => setAboutFilter('EDUCATION')}>Education</button>
                         <button className={`about_btns ${aboutFilter === 'SKILL' ? 'about_btns-active' : ''}`} onClick={() => setAboutFilter('SKILL')}>Skills</button>
-                        <button className={`about_btns ${aboutFilter === 'AWARD' ? 'about_btns-active' : ''}`} onClick={() => setAboutFilter('AWARD')}>Award</button>
+                        {/* <button className={`about_btns ${aboutFilter === 'AWARD' ? 'about_btns-active' : ''}`} onClick={() => setAboutFilter('AWARD')}>Award</button> */}
                     </div>
                 </Col>
                 <Col lg='8' md="9">
@@ -35,10 +35,9 @@ const About = () => {
                                 <p> I am a learner of Web Development and Programming.To further my web development career by demonstrating my abilities and demonstrating that I am a quick learner and knowledgeable professional. I'm always on the lookout for new challenges that will allow me to put my skills to the test, and I love working with cutting-edge technology.</p>
                                 <div className="social_links">
                                     <h6 className='mb-4'>Connect With me:</h6>
-                                    <span><a href=""><i class="ri-facebook-line"></i></a></span>
-                                    <span><a href=""><i class="ri-linkedin-line"></i></a></span>
-                                    <span><a href=""><i class="ri-github-line"></i></a></span>
-                                    <span><a href=""><i class="ri-facebook-line"></i></a></span>
+                                    <span><a href="https://www.facebook.com/moniruzzaman255/"><i class="ri-facebook-line"></i></a></span>
+                                    <span><a href="https://www.linkedin.com/in/moniruzzaman25/"><i class="ri-linkedin-line"></i></a></span>
+                                    <span><a href="https://github.com/Moniruzzaman2525"><i class="ri-github-line"></i></a></span>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +49,7 @@ const About = () => {
                         aboutFilter === 'SKILL' && <Skill></Skill>
                     }
                     {
-                        aboutFilter === 'AWARD' && <Award></Award>
+                        // aboutFilter === 'AWARD' && <Award></Award>
                     }
                 </Col>
             </Row>

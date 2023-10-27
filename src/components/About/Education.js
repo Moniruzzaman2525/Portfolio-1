@@ -18,8 +18,8 @@ const Education = () => {
             <tr>
                 <td>BBA</td>
                 <td>Political Science</td>
-                <td>Jamshed Ali Memorial University College</td>
-                <td>2022 - Present</td>
+                <td>National University</td>
+                <td>2019 - Present</td>
             </tr>
             <tr>
                 <td>HSC</td>

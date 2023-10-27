@@ -21,7 +21,7 @@ const HeroSection = () => {
         })
     }, []);
 
-    const link = "https://drive.google.com/file/d/1jJRbdG4KY9BzK2NCuHD_Y_JmhR2kOLsw/view?usp=sharing"
+    const link = "https://drive.google.com/file/d/11N79xR3Df2Ar16oqQH_0ytO_l3II5KJh/view?usp=sharing"
 
 
     return <section className='hero_section' id='home'>
@@ -34,7 +34,7 @@ const HeroSection = () => {
                         <h4 className='mb-4 mt-2'>I am a web developer</h4>
                         <p>To advance my web development career by exhibiting my talents and proving that I am a quick learner and highly skilled professional. I'm always looking for new challenges that will allow me to use my abilities to their full potential, and I enjoy working with cutting-edge technology.</p>
                         <div className="hero_btns mt-4 d-flex align-items-center gap-4">
-                            <button className='btn hire_btn'><a href="mailto:moniurzzaman25@gmail.com">Hire Me</a></button>
+                            <button className='btn hire_btn'><a href="mailto:web.moniruzzaman1@gmail.com">Hire Me</a></button>
                             <a href={link} target="_blank" rel="noopener noreferrer">
                                 <button className='btn hover:translate-x-3 hover:bg-emerald-800'>Resume</button>
                             </a>

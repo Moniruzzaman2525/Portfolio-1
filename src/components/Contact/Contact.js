@@ -21,18 +21,18 @@ const Contact = () => {
                         </div>
                         <div className="single_info-box w-50">
                             <h6>Phone</h6>
-                            <p>+880 192 571 6395</p>
+                            <p>+880 19257 16395</p>
                         </div>
                     </div>
 
                     <div className="contact_info-container d-flex align-items-center gap-5">
                         <div className="single_info-box w-50">
                             <h6>Email</h6>
-                            <p>moniurzzaman25@gmail.com</p>
+                            <p>web.moniruzzaman1@gmail.com</p>
                         </div>
                         <div className="single_info-box w-50">
                             <h6>Location</h6>
-                            <p>Mymonsingh - 2200, Bangladesh</p>
+                            <p>Sherpur - 2200, Bangladesh</p>
                         </div>
                     </div>
                 </Col>
